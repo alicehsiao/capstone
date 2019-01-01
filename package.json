@@ -1,0 +1,11 @@
+{
+  "name": "taiwan",
+  "version": "1.0.0",
+  "description": "api for touring taiwan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ahsiao",
+  "license": "ISC"
+}
