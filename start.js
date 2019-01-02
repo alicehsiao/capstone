@@ -1,7 +1,11 @@
 /* eslint-disable no-console */
 
 // import environmental variables from our .env file
-import 'dotenv/config';
+import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config({
+    path: path.join(__dirname, '.env')
+});
 
 // import middleware
 import app from './app';
