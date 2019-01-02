@@ -1,45 +1,18 @@
-// database
-// const mongoose = require('mongoose');
+/* eslint-disable no-console */
 
 // import environmental variables from our .env file
 import 'dotenv/config';
-import express from 'express';
-import bodyParser from 'body-parser';
-import db from './db/db';
 
+// import middleware
+import app from './app';
 
-const app = express();
-const PORT = 3600;
+// import models
 
-// Parse incoming requests data
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: false
-}));
+// database stuffs
+// const mongoose = require('mongoose');
 
-// get all todos
-app.get('/api/v1/todos', (req, res) => {
-    res.status(200).send({
-        success: 'true',
-        message: 'todos retrieved successfully',
-        todos: db
-    })
+// Start the app
+app.set('port', process.env.PORT || 7777);
+const server = app.listen(app.get('port'), () => {
+    console.log(`Express running → PORT ${server.address().port}`);
 });
-
-app.get("/", (req, res) => {
-    res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
-});
-
-app.listen(PORT, () =>
-    console.log(`Server is listening on port ${PORT}`))
-
-// console.log('Hello');
-
-// const test = [1, 2, 3]
-
-// const redo = [...test, 4]
-// console.log(redo);
-
-// console.log(process.env.DB_HOST);
-
-export default app;
