@@ -1,13 +1,35 @@
-require('dotenv').config();
+import 'dotenv/config';
+import express from 'express';
+import bodyParser from 'body-parser';
+import db from './db/db';
 
-console.log('Hello');
 
-const test = {
-    name: "Alice"
-}
+const app = express();
+const PORT = 3600;
 
-const redo = { ...test }
-redo["age"] = 31;
-console.log(redo);
+// get all todos
+app.get('/api/v1/todos', (req, res) => {
+    res.status(200).send({
+        success: 'true',
+        message: 'todos retrieved successfully',
+        todos: db
+    })
+});
 
-console.log(process.env.DB_HOST);
+app.get("/", (req, res) => {
+    res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
+});
+
+app.listen(PORT, () =>
+    console.log(`Server is listening on port ${PORT}`))
+
+// console.log('Hello');
+
+// const test = [1, 2, 3]
+
+// const redo = [...test, 4]
+// console.log(redo);
+
+// console.log(process.env.DB_HOST);
+
+export default app;

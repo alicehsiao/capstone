@@ -1,12 +1,12 @@
-// {
-//     "presets": ["@babel/preset-env"]
-// }
 {
-    "presets": [
-        ["env", {
-            "targets": {
-                "node": "9.11.2"
-            }
-        }]
-    ]
+    "presets": ["env"]
 }
+// {
+//     "presets": [
+//         ["env", {
+//             "targets": {
+//                 "node": "9.11.2"
+//             }
+//         }]
+//     ]
+// }
