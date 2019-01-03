@@ -16,5 +16,11 @@ const hikingTrailsSchema = new mongoose.Schema({
     }
 });
 
+// Define our indexes, for faster reads
+// hikingTrailsSchema.index({
+//     name: 'text',
+//     description: 'text'
+// });
+
 const HikingTrail = mongoose.model('HikingTrail', hikingTrailsSchema);
 module.exports = HikingTrail;

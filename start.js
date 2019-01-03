@@ -15,9 +15,6 @@ mongoose.connection.on('error', (error) => {
     console.error(`🙅‍ 🚫 🙅‍ 🚫 🙅 ➡ ${error.message} `)
 });
 
-// import models
-import './models/FoodJoint';
-
 // Start the app
 app.set('port', process.env.PORT || 7777);
 const server = app.listen(app.get('port'), () => {
