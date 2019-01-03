@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const attractionSchema = new mongoose.Schema({
+const bikePathSchema = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
@@ -20,5 +20,5 @@ const attractionSchema = new mongoose.Schema({
     }
 });
 
-const Attraction = mongoose.model('Attraction', attractionSchema);
-module.exports = Attraction;
+const BikePath = mongoose.model('BikePath', bikePathSchema);
+module.exports = BikePath;
