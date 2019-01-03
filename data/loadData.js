@@ -44,7 +44,11 @@ async function loadAllData() {
 // deleteAllData
 async function deleteAllData() {
     console.log('😢 Goodbye Data...');
-    await FoodJoint.remove();
+    await FoodJoint.deleteMany();
+    await BikePath.deleteMany();
+    await Attraction.deleteMany();
+    await Activity.deleteMany();
+    await HikingTrail.deleteMany();
     console.log('Data deleted. To load sample data, run \n\n\t npm run seed\n\n');
     process.exit();
 }

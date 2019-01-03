@@ -1,132 +1,131 @@
-﻿[
-	{
-		"name": "都會區綠園道主題路線",
-		"distance(km)": "27.7",
-		"region": "北區、南區"
-	},
-	{
-		"name": "大坑自行車道",
-		"distance(km)": "2.71",
-		"region": "北屯區"
-	},
-	{
-		"name": "大坑溪段自行車道",
-		"distance(km)": "16.899999999999999",
-		"region": "北屯區"
-	},
-	{
-		"name": "南邊溪自行車道",
-		"distance(km)": "2.2999999999999998",
-		"region": "西屯區"
-	},
-	{
-		"name": "南屯溪自行車道",
-		"distance(km)": "3.9",
-		"region": "南屯區"
-	},
-	{
-		"name": "自由路自行車道",
-		"distance(km)": "1.59",
-		"region": "中區、北區"
-	},
-	{
-		"name": "旱溪親水式自行車道",
-		"distance(km)": "9.6999999999999993",
-		"region": "東區"
-	},
-	{
-		"name": "建國南路自行車道",
-		"distance(km)": "1.38",
-		"region": "南區"
-	},
-	{
-		"name": "庄內鐵馬道",
-		"distance(km)": "6",
-		"region": "北屯區"
-	},
-	{
-		"name": "后豐鐵馬道",
-		"distance(km)": "4.7",
-		"region": "后里區、豐原區"
-	},
-	{
-		"name": "潭雅神綠園道",
-		"distance(km)": "14",
-		"region": "潭子、神岡、大雅"
-	},
-	{
-		"name": "中科自行車道",
-		"distance(km)": "6",
-		"region": "西屯區"
-	},
-	{
-		"name": "旱溪自行車道",
-		"distance(km)": "3",
-		"region": "潭子區"
-	},
-	{
-		"name": "東豐自行車綠廊",
-		"distance(km)": "11.2",
-		"region": "東勢區、石岡區、豐原區"
-	},
-	{
-		"name": "新社水井七分自行車道",
-		"distance(km)": "20.6",
-		"region": "石岡區、新社區"
-	},
-	{
-		"name": "新社大南自行車道",
-		"distance(km)": "17.5",
-		"region": "新社區"
-	},
-	{
-		"name": "大甲鐵砧山自行車道",
-		"distance(km)": "1.2",
-		"region": "大甲區"
-	},
-	{
-		"name": "清水五福圳自行車道",
-		"distance(km)": "6.5",
-		"region": "清水區"
-	},
-	{
-		"name": "清水區臨海路自行車道",
-		"distance(km)": "5.8",
-		"region": "清水區"
-	},
-	{
-		"name": "清水區高美自行車道",
-		"distance(km)": "3.3",
-		"region": "清水區"
-	},
-	{
-		"name": "臺中港區臨海路自行車道",
-		"distance(km)": "7",
-		"region": "梧棲區"
-	},
-	{
-		"name": "沙鹿星河路自行車道",
-		"distance(km)": "3.5",
-		"region": "沙鹿區"
-	},
-	{
-		"name": "龍井大排自行車道",
-		"distance(km)": "5",
-		"region": "龍井區"
-	},
-	{
-		"name": "磺溪書院自行車道",
-		"distance(km)": "7.3",
-		"region": "大肚區"
-	},
-	{
-		"name": "麻園頭溪自行車道",
-		"distance(km)": "1.6",
-		"region": "烏日區"
-	},
-	{
-		"name": "大里河濱自行車道",
-		"distance(km)": "6.4",
-		"region": "大里區"
-	}
+[{
+        "name": "都會區綠園道主題路線",
+        "distanceKM": 27.7,
+        "region": "北區、南區"
+    },
+    {
+        "name": "大坑自行車道",
+        "distanceKM": 2.71,
+        "region": "北屯區"
+    },
+    {
+        "name": "大坑溪段自行車道",
+        "distanceKM": 16.9,
+        "region": "北屯區"
+    },
+    {
+        "name": "南邊溪自行車道",
+        "distanceKM": 2.3,
+        "region": "西屯區"
+    },
+    {
+        "name": "南屯溪自行車道",
+        "distanceKM": 3.9,
+        "region": "南屯區"
+    },
+    {
+        "name": "自由路自行車道",
+        "distanceKM": 1.59,
+        "region": "中區、北區"
+    },
+    {
+        "name": "旱溪親水式自行車道",
+        "distanceKM": 9.7,
+        "region": "東區"
+    },
+    {
+        "name": "建國南路自行車道",
+        "distanceKM": 1.38,
+        "region": "南區"
+    },
+    {
+        "name": "庄內鐵馬道",
+        "distanceKM": 6,
+        "region": "北屯區"
+    },
+    {
+        "name": "后豐鐵馬道",
+        "distanceKM": 4.7,
+        "region": "后里區、豐原區"
+    },
+    {
+        "name": "潭雅神綠園道",
+        "distanceKM": 14,
+        "region": "潭子、神岡、大雅"
+    },
+    {
+        "name": "中科自行車道",
+        "distanceKM": 6,
+        "region": "西屯區"
+    },
+    {
+        "name": "旱溪自行車道",
+        "distanceKM": 3,
+        "region": "潭子區"
+    },
+    {
+        "name": "東豐自行車綠廊",
+        "distanceKM": 11.2,
+        "region": "東勢區、石岡區、豐原區"
+    },
+    {
+        "name": "新社水井七分自行車道",
+        "distanceKM": 20.6,
+        "region": "石岡區、新社區"
+    },
+    {
+        "name": "新社大南自行車道",
+        "distanceKM": 17.5,
+        "region": "新社區"
+    },
+    {
+        "name": "大甲鐵砧山自行車道",
+        "distanceKM": 1.2,
+        "region": "大甲區"
+    },
+    {
+        "name": "清水五福圳自行車道",
+        "distanceKM": 6.5,
+        "region": "清水區"
+    },
+    {
+        "name": "清水區臨海路自行車道",
+        "distanceKM": 5.8,
+        "region": "清水區"
+    },
+    {
+        "name": "清水區高美自行車道",
+        "distanceKM": 3.3,
+        "region": "清水區"
+    },
+    {
+        "name": "臺中港區臨海路自行車道",
+        "distanceKM": 7,
+        "region": "梧棲區"
+    },
+    {
+        "name": "沙鹿星河路自行車道",
+        "distanceKM": 3.5,
+        "region": "沙鹿區"
+    },
+    {
+        "name": "龍井大排自行車道",
+        "distanceKM": 5,
+        "region": "龍井區"
+    },
+    {
+        "name": "磺溪書院自行車道",
+        "distanceKM": 7.3,
+        "region": "大肚區"
+    },
+    {
+        "name": "麻園頭溪自行車道",
+        "distanceKM": 1.6,
+        "region": "烏日區"
+    },
+    {
+        "name": "大里河濱自行車道",
+        "distanceKM": 6.4,
+        "region": "大里區"
+    }
 ]
