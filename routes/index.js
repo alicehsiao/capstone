@@ -6,6 +6,7 @@ import foodJointController from '../controllers/foodJointController';
 const router = express.Router();
 
 router.get('/api/v1/foodjoints', catchErrors(foodJointController.getAllFoodJoints));
+router.get('/api/v1/foodjoints/:id', catchErrors(foodJointController.getSingleFoodJoint));
 
 export default router; 
 
