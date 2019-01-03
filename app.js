@@ -3,8 +3,6 @@ import path from 'path';
 import bodyParser from 'body-parser';
 import routes from './routes/index';
 import errorHandlers from './handlers/errorHandlers';
-// import models
-import './models/FoodJoint';
 
 // Creating Express app
 const app = express();
@@ -32,4 +30,4 @@ if (app.get('env') === 'development') {
 app.use(errorHandlers.productionErrors);
 
 
-export default app;
+module.exports = app;

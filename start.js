@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 
-import app from './app'; // middleware
 import mongoose from 'mongoose'; // database
 import path from 'path'; 
 import dotenv from 'dotenv'; // env variables
@@ -15,7 +14,11 @@ mongoose.connection.on('error', (error) => {
     console.error(`🙅‍ 🚫 🙅‍ 🚫 🙅 ➡ ${error.message} `)
 });
 
+// import models
+require('./models/FoodJoint');
+
 // Start the app
+const app = require('./app');
 app.set('port', process.env.PORT || 7777);
 const server = app.listen(app.get('port'), () => {
     console.log(`Express running → PORT ${server.address().port}`);

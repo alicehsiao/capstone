@@ -20,5 +20,4 @@ const foodJointSchema = new mongoose.Schema({
     }
 });
 
-const FoodJoint = mongoose.model('FoodJoint', foodJointSchema);
-module.exports = FoodJoint;
+module.exports = mongoose.model('FoodJoint', foodJointSchema);
