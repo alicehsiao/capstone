@@ -15,7 +15,7 @@ const activitySchema = new mongoose.Schema({
         type: String,
         trim: true
     },
-    location: {
+    region: {
         type: String,
         trim: true
     },
@@ -41,16 +41,6 @@ const activitySchema = new mongoose.Schema({
         type: String,
         trim: true
     },
-    longitude: {
-        type: Number,
-        trim: true,
-        required: true
-    },
-    latitude: {
-        type: Number,
-        trim: true,
-        required: true
-    },
     picture1: {
         type: String,
         trim: true
@@ -58,6 +48,24 @@ const activitySchema = new mongoose.Schema({
     picdescribe1: {
         type: String,
         trim: true
+    },
+    location: {
+        type: {
+            type: String,
+            default: 'Point'
+        },
+        coordinates: {
+            type: [Number]
+        },
+        address: {
+            type: String
+        }
+    },
+    photos: [{
+        type: String
+    }],
+    place_id: {
+        type: String
     }
 });
 

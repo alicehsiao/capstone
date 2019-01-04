@@ -27,16 +27,6 @@ const attractionSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    longitude: {
-        type: String,
-        trim: true,
-        required: true
-    },
-    latitude: {
-        type: String,
-        trim: true,
-        required: true
-    },
     phone: {
         type: String,
         trim: true
@@ -60,6 +50,31 @@ const attractionSchema = new mongoose.Schema({
     tourism: {
         type: String,
         trim: true
+    },
+    location: {
+        type: {
+            type: String,
+            default: 'Point'
+        },
+        coordinates: {
+            type: [Number]
+        },
+        address: {
+            type: String
+        }
+    },
+    intl_phone: {
+        type: String,
+        trim: true
+    },
+    photos: [{
+        type: String
+    }],
+    hours: [{
+        type: String
+    }],
+    place_id: {
+        type: String
     }
 });
 
