@@ -36,3 +36,13 @@ db.once('open', function () {
 //         }
 //     });
 // });
+
+// Delete field in all documents in a collection
+// db.activities.update({}, {
+//     $unset: {
+//         photos: 4,
+//         location: 2
+//     }
+// }, {
+//     multi: true
+// });
