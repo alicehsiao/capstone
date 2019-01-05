@@ -13,7 +13,7 @@ async function formatFoodJointData(foodJoints) {
         const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
-        const foodJoint = await axios.get(res)
+        await axios.get(res)
             .then(response => {
                 // Get and Save Place ID
                 const placeID = response.data.candidates[0];
@@ -21,8 +21,7 @@ async function formatFoodJointData(foodJoints) {
                     foodJoints[i]["place_id"] = "";
                 } else {
                     foodJoints[i]["place_id"] = placeID["place_id"];
-                };
-                return foodJoints[i];
+                }
             })
             .catch(error => {
                 console.log(error);
