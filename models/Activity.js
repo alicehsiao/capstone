@@ -28,13 +28,11 @@ const activitySchema = new mongoose.Schema({
         trim: true
     },
     start: {
-        type: String,
-        trim: true,
+        type: Date,
         required: true
     },
     end: {
-        type: String,
-        trim: true,
+        type: Date,
         required: true
     },
     website: {
