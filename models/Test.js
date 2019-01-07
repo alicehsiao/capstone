@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const foodJointSchema = new mongoose.Schema({
+const testSchema = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
@@ -23,4 +23,4 @@ const foodJointSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('FoodJoint', foodJointSchema);
+module.exports = mongoose.model('Test', testSchema);

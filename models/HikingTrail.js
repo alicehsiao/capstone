@@ -14,24 +14,9 @@ const hikingTrailsSchema = new mongoose.Schema({
         type: String,
         trim: true
     },
-    location: {
-            type: {
-                type: String,
-                default: 'Point'
-            },
-            coordinates: {
-                type: [Number]
-            },
-            address: {
-                type: String
-            }
-        },
-        photos: [{
-            type: String
-        }],
-        place_id: {
-            type: String
-        }
+    place_id: {
+        type: String
+    }
 });
 
 // Define our indexes, for faster reads

@@ -5,7 +5,7 @@ import hikingTrailController from '../controllers/hikingTrailController';
 import bikePathController from '../controllers/bikePathController';
 import attractionController from '../controllers/attractionController';
 import activityController from '../controllers/activityController';
-
+import testController from '../controllers/testController';
 
 const router = express.Router();
 
@@ -23,6 +23,9 @@ router.get('/api/v1/attractions/:id', catchErrors(attractionController.getSingle
 
 router.get('/api/v1/activities', catchErrors(activityController.getAllActivities));
 router.get('/api/v1/activities/:id', catchErrors(activityController.getSingleActivity));
+
+router.get('/api/v1/tests', catchErrors(testController.getAllTests));
+router.get('/api/v1/tests/:id', catchErrors(testController.getSingleTest));
 
 
 export default router; 

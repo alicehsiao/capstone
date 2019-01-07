@@ -172,8 +172,33 @@ async function formatActivityData(activities) {
     return activities;
 }
 
+async function formatTestData(tests) {
+    for (let i = 0; i < tests.length; i++) {
+        const name = tests[i]["name"];
+
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const res = encodeURI(url);
+
+        await axios.get(res)
+            .then(response => {
+                // Get and Save Place ID
+                const placeID = response.data.candidates[0];
+                if (!placeID) {
+                    tests[i]["place_id"] = "";
+                } else {
+                    tests[i]["place_id"] = placeID["place_id"];
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+    return tests;
+}
+
 module.exports.formatFoodJointData = formatFoodJointData;
 module.exports.formatHikingTrailData = formatHikingTrailData;
 module.exports.formatBikePathData = formatBikePathData;
 module.exports.formatAttractionData = formatAttractionData;
 module.exports.formatActivityData = formatActivityData;
+module.exports.formatTestData = formatTestData;
