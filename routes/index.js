@@ -27,12 +27,4 @@ router.get('/api/v1/activities/:id', catchErrors(activityController.getSingleAct
 router.get('/api/v1/tests', catchErrors(testController.getAllTests));
 router.get('/api/v1/tests/:id', catchErrors(testController.getSingleTest));
 
-
 export default router; 
-
-
-
-// Examples
-// router.post('/api/v1/todos', TodoController.createTodo);
-// router.put('/api/v1/todos/:id', TodoController.updateTodo);
-// router.delete('/api/v1/todos/:id', TodoController.deleteTodo);

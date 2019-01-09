@@ -15,5 +15,8 @@
             "jsx": true,
             "modules": true
         }
+    },
+    "rules": {
+        "no-console": "off"
     }
 }
