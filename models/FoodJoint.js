@@ -6,6 +6,9 @@ const foodJointSchema = new mongoose.Schema({
         trim: true,
         required: 'Please enter a name for this food joint!'
     },
+    engName: {
+        type: String
+    },
     region: {
         type: String,
         trim: true

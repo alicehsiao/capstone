@@ -6,6 +6,9 @@ const attractionSchema = new mongoose.Schema({
         trim: true,
         required: 'Please enter a name for this attraction!'
     },
+    engName: {
+        type: String
+    },
     status: {
         type: String,
         trim: true

@@ -6,6 +6,9 @@ const activitySchema = new mongoose.Schema({
         trim: true,
         required: 'Please enter a name for this activity!'
     },
+    engName: {
+        type: String
+    },
     description: {
         type: String,
         trim: true,

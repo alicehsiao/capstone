@@ -34,24 +34,23 @@ const tests = JSON.parse(fs.readFileSync(__dirname + '/test.json', 'utf-8'));
 // used a try/catch block to handle any exceptions upon the loading of data
 async function loadAllData() {
     try {
-        // const res = await formatFoodJointData(foodJoints);
-        // await FoodJoint.insertMany(res);
+        const res = await formatFoodJointData(foodJoints);
+        await FoodJoint.insertMany(res);
 
-        // const res2 = await formatBikePathData(bikePaths);
-        // await BikePath.insertMany(res2);
+        const res2 = await formatBikePathData(bikePaths);
+        await BikePath.insertMany(res2);
         
-        // const res3 = await formatAttractionData(attractions);
-        // await Attraction.insertMany(res3);
+        const res3 = await formatAttractionData(attractions);
+        await Attraction.insertMany(res3);
 
-        // const res4 = await formatActivityData(activities);
-        // await Activity.insertMany(res4);
+        const res4 = await formatActivityData(activities);
+        await Activity.insertMany(res4);
 
-        // const res5 = await formatHikingTrailData(hikingTrails);
-        // await HikingTrail.insertMany(res5);
+        const res5 = await formatHikingTrailData(hikingTrails);
+        await HikingTrail.insertMany(res5);
 
         const res6 = await formatTestData(tests);
         await Test.insertMany(res6);
-        
         
         console.log('👍 Finished Loading Data!');
         process.exit();

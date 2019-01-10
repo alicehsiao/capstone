@@ -6,6 +6,9 @@ const bikePathSchema = new mongoose.Schema({
         trim: true,
         required: 'Please enter a name for this bike path!'
     },
+    engName: {
+        type: String
+    },
     distanceKM: {
         type: Number,
         trim: true
