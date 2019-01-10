@@ -20,45 +20,7 @@ db.on('error', (error) => {
 
 db.once('open', function () {
     console.log('connected');
-});
-
-// Your Google Cloud Platform project ID
-// const projectId = 'off-to-taiwan';
-
-// Instantiates a client
-// const translate = new Translate({
-//     projectId: projectId,
-// });
-
-// Test.find({})
-//     .then(places => {
-//         places.forEach(function (doc) {
-
-//             const text = doc.name;
-//             const target = 'en';
-
-//             translate
-//                 .translate(text, target)
-//                 .then(results => {
-//                     const translation = results[0];
-
-//                     Test.updateOne({
-//                         "_id": doc._id
-//                     }, {
-//                         "$set": {
-//                             "engName": translation
-//                         }
-//                     }).exec();
-
-//                     console.log(`Text: ${text}`);
-//                     console.log(`Translation: ${translation}`);
-//                 })
-//                 .catch(err => {
-//                     console.error('ERROR:', err);
-//                 });
-//         })
-//     });
-        
+});        
 
 // via mongo shell
 // 1) connect
