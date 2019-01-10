@@ -2,12 +2,12 @@
 const mongoose = require('mongoose');
 const path = require('path');
 const dotenv = require('dotenv');
-const FoodJoint = require('../models/FoodJoint');
-const Activity = require('../models/Activity');
+// const FoodJoint = require('../models/FoodJoint');
+// const Activity = require('../models/Activity');
 const Attraction = require('../models/Attraction');
-const HikingTrail = require('../models/HikingTrail');
-const BikePath = require('../models/BikePath');
-const Test = require('../models/Test');
+// const HikingTrail = require('../models/HikingTrail');
+// const BikePath = require('../models/BikePath');
+// const Test = require('../models/Test');
 const {
     Translate
 } = require('@google-cloud/translate');
@@ -36,6 +36,7 @@ const translate = new Translate({
     projectId: projectId,
 });
 
+// Update Single Document
 // translate
 //     .translate("2018鯤鯓王平安鹽祭", "en")
 //     .then(results => {
