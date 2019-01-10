@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import routes from './routes/index';
 import errorHandlers from './handlers/errorHandlers';
-import passport from 'passport';
 
 // express-session (handle sessions)
 // connect-mongo (for storing sessions in MongoDB)
@@ -15,11 +14,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
-
-// initialize passport
-app.use(passport.initialize());
-app.use(passport.session());
 
 // Routes
 app.use('/', routes);
