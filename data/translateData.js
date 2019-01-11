@@ -29,7 +29,7 @@ db.once('open', function () {
 });
 
 // Your Google Cloud Platform project ID
-const projectId = 'off-to-taiwan';
+const projectId = 'off-to-taiwan-6e73d';
 
 // Instantiates a client
 const translate = new Translate({

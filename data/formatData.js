@@ -10,7 +10,7 @@ async function formatFoodJointData(foodJoints) {
     for (let i = 0; i < foodJoints.length; i++) {
         const name = foodJoints[i]["name"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
@@ -31,7 +31,7 @@ async function formatFoodJointData(foodJoints) {
 
         // if (foodJoint["place_id"]) {
         //     // Get Place Details
-        //     const url = `https://maps.googleapis.com/maps/api/place/details/json?key=${process.env.GOOGLE_API_KEY}&placeid=${foodJoint["place_id"]}`;
+        //     const url = `https://maps.googleapis.com/maps/api/place/details/json?key=${process.env.GOOGLE_PLACES_API_KEY}&placeid=${foodJoint["place_id"]}`;
         //     const res = encodeURI(url);
 
         //     await axios.get(res)
@@ -80,7 +80,7 @@ async function formatBikePathData(bikePaths) {
     for (let i = 0; i < bikePaths.length; i++) {
         const name = bikePaths[i]["name"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
@@ -104,7 +104,7 @@ async function formatHikingTrailData(hikingTrails) {
     for (let i = 0; i < hikingTrails.length; i++) {
         const name = hikingTrails[i]["name"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
@@ -128,7 +128,7 @@ async function formatAttractionData(attractions) {
     for (let i = 0; i < attractions.length; i++) {
         const name = attractions[i]["name"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
@@ -152,7 +152,7 @@ async function formatActivityData(activities) {
     for (let i = 0; i < activities.length; i++) {
         const address = activities[i]["address"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${address}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${address}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
@@ -176,7 +176,7 @@ async function formatTestData(tests) {
     for (let i = 0; i < tests.length; i++) {
         const name = tests[i]["name"];
 
-        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_API_KEY}&input=${name}&inputtype=textquery`
+        const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${process.env.GOOGLE_PLACES_API_KEY}&input=${name}&inputtype=textquery`
         const res = encodeURI(url);
 
         await axios.get(res)
