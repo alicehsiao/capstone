@@ -1,9 +1,16 @@
 import mongoose from 'mongoose';
 require('../models/Activity');
 const Activity = mongoose.model('Activity');
+import moment from 'moment';
 
 exports.getAllActivities = async (req, res) => {
-    const activities = await Activity.find();
+    const activities = await Activity.find({
+        start: {
+            $gte: moment().toDate()
+        }
+    }).sort({
+        start: 1
+    });
     res.status(200).json(activities);
 };
 
