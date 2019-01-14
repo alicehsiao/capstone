@@ -52,6 +52,9 @@ const activitySchema = new mongoose.Schema({
     },
     place_id: {
         type: String
+    },
+    engDescription: {
+        type: String
     }
 });
 

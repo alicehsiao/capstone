@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const path = require('path');
 const dotenv = require('dotenv');
 // const FoodJoint = require('../models/FoodJoint');
-// const Activity = require('../models/Activity');
-const Attraction = require('../models/Attraction');
+const Activity = require('../models/Activity');
+// const Attraction = require('../models/Attraction');
 // const HikingTrail = require('../models/HikingTrail');
 // const BikePath = require('../models/BikePath');
 // const Test = require('../models/Test');
@@ -58,11 +58,11 @@ const translate = new Translate({
 //     });
 
 
-Attraction.find({})
+Activity.find({})
     .then(places => {
         places.forEach(function (doc) {
 
-            const text = doc.name;
+            const text = doc.description;
             const target = 'en';
 
             translate
@@ -70,11 +70,11 @@ Attraction.find({})
                 .then(results => {
                     const translation = results[0];
 
-                    Attraction.updateOne({
+                    Activity.updateOne({
                         "_id": doc._id
                     }, {
                         "$set": {
-                            "engName": translation
+                            "engDescription": translation
                         }
                     }).exec();
 
