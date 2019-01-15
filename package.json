@@ -9,6 +9,9 @@
     "seed": "node ./data/loadData.js",
     "wipe": "node ./data/loadData.js --delete"
   },
+  "engines": {
+    "node": "11.4.0"
+  },
   "author": "ahsiao",
   "license": "ISC",
   "dependencies": {

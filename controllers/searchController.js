@@ -11,7 +11,7 @@ const Attraction = mongoose.model('Attraction');
 exports.queryDatabase = async (req, res) => {
     let searchResults = [];
 
-    const foodJoints = await FoodJoint.find({ $text: { $search: req.query.query }})
+    const foodJoints = await FoodJoint.find({ $text: { $search: req.query.name }})
        .limit(10);
     foodJoints.forEach(foodJoint => searchResults.push(foodJoint));
 
