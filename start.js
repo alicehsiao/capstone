@@ -15,10 +15,10 @@ mongoose.connection.on('error', (error) => {
 // import models
 require('./models/FoodJoint');
 
+
 // Start the app
 const app = require('./app');
-app.set('port', process.env.PORT || 7777);
-const server = app.listen(app.get('port'), () => {
+const server = app.listen(process.env.PORT || 3000, () => {
     console.log(`Express running → PORT ${server.address().port}`);
 });
 
