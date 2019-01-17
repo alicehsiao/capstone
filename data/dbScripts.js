@@ -37,6 +37,14 @@ db.once('open', function () {
 //         }
 //     });
 // });
+// db.your_collection.update({}, {
+//     $set: {
+//         "new_field": 1
+//     }
+// }, {
+//     upsert: false,
+//     multi: true
+// })
 
 
 // find all athletes that play tennis
