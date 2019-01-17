@@ -8,8 +8,6 @@ dotenv.config({
 });
 
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
-// mongoose uses native promises in v5
-// mongoose.Promise = global.Promise
 mongoose.connection.on('error', (error) => {
     console.error(`🙅‍ 🚫 🙅‍ 🚫 🙅 ➡ ${error.message} `)
 });

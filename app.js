@@ -3,9 +3,6 @@ import bodyParser from 'body-parser';
 import routes from './routes/index';
 import errorHandlers from './handlers/errorHandlers';
 
-// express-session (handle sessions)
-// connect-mongo (for storing sessions in MongoDB)
-
 // Creating Express app
 const app = express();
 

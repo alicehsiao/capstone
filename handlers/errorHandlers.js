@@ -8,14 +8,6 @@ exports.notFound = (req, res, next) => {
     next(err);
 };
 
-// Send back validation errors as json
-// exports.validationErrors = (err, req, res, next) => {
-//     if (!err.errors) return next(err);
-//     res.format({
-//         'application/json': () => res.json(err.errors)
-//     });
-// };
-
 exports.developmentErrors = (err, req, res, next) => {
     err.stack = err.stack || '';
     const errorDetails = {
