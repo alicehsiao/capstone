@@ -1,7 +1,7 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import routes from './routes/index';
-import errorHandlers from './handlers/errorHandlers';
+const express = require('express');
+const bodyParser = require('body-parser');
+const routes = require('./routes/index');
+const errorHandlers = require('./handlers/errorHandlers');
 
 // Creating Express app
 const app = express();

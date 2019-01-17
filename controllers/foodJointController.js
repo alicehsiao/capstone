@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 require('../models/FoodJoint');
 const FoodJoint = mongoose.model('FoodJoint');
 

@@ -1,7 +1,7 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 require('../models/Activity');
 const Activity = mongoose.model('Activity');
-import moment from 'moment';
+const moment = require('moment');
 
 exports.getAllActivities = async (req, res) => {
     const activities = await Activity.find({

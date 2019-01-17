@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 require('../models/Test');
 const Test = mongoose.model('Test');
 

@@ -1,12 +1,12 @@
-import express from 'express';
-import { catchErrors } from '../handlers/errorHandlers';
-import foodJointController from '../controllers/foodJointController';
-import hikingTrailController from '../controllers/hikingTrailController';
-import bikePathController from '../controllers/bikePathController';
-import attractionController from '../controllers/attractionController';
-import activityController from '../controllers/activityController';
-import testController from '../controllers/testController';
-import searchController from '../controllers/searchController';
+const express = require('express');
+const { catchErrors } = require('../handlers/errorHandlers');
+const foodJointController = require('../controllers/foodJointController');
+const hikingTrailController = require('../controllers/hikingTrailController');
+const bikePathController = require('../controllers/bikePathController');
+const attractionController = require('../controllers/attractionController');
+const activityController = require('../controllers/activityController');
+const testController = require('../controllers/testController');
+const searchController = require('../controllers/searchController');
 
 const router = express.Router();
 
@@ -30,4 +30,4 @@ router.get('/api/v1/tests/:id', catchErrors(testController.getSingleTest));
 
 router.get('/api/v1/search', catchErrors(searchController.queryDatabase));
 
-export default router; 
+module.exports = router; 

@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 require('../models/HikingTrail');
 const HikingTrail = mongoose.model('HikingTrail');
 require('../models/FoodJoint');

@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
-import mongoose from 'mongoose'; // database
-import path from 'path'; 
-import dotenv from 'dotenv'; // env variables
+const mongoose = require('mongoose'); // database
+const path = require('path'); 
+const dotenv = require('dotenv'); // env variables
 dotenv.config({
     path: path.join(__dirname, '.env')
 });
