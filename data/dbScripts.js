@@ -45,6 +45,13 @@ db.once('open', function () {
 //     upsert: false,
 //     multi: true
 // })
+// db.hikingtrails.update({}, {
+//     $set: {
+//         "heart": false
+//     }
+// }, {
+//     multi: true
+// })
 
 
 // find all athletes that play tennis
