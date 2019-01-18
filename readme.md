@@ -1,4 +1,4 @@
-# **Off to Taiwan!/Solo/TBD**
+# **Off to Taiwan
 ## **ALICE HSIAO** - Product Plan Components
 
 1. __Personal Learning Goals__:
@@ -6,9 +6,7 @@
     * Creating wireframes and learning about design for a seamless UI experience
     * Using Express and Node.js on the backend to build an API (Taiwan Gov Data) and talk to External API (Google)
     * Working in the cloud (database and deployment)
-    * Using my GraphQL Server to talk to external API's (Google Places API, Google Translate API, etc.)
     * Anything and everything Javascript (since I am going all in on JS for this capstone)
-
 
 2. __Problem Statement__: 
     * For non-native speakers, gathering information about traveling in Taiwan is cumbersome. Having to navigate through various blogs, government websites, etc. it would be useful to have all that information in one place, with ability to save personal preferences and other information.
@@ -40,10 +38,9 @@
 6. __Technology selections__:
     - React Native
     - Node.js with Express
-    - Testing Framework: Jest (Unit)
     - External API: Google API Suite
-    - Database: MongoDB
-    - Infrastructure: AWS Elastic Beanstalk, Google Cloud Platform
+    - Database: MongoDB, Firebase
+    - Infrastructure: AWS Elastic Beanstalk, Google Cloud Platform, Heroku
   
 7. __Wireframes__:
-    - Any format you may like - photos of paper, online tool and/or paper to show your instructors
+    - Built in Balsamiq
