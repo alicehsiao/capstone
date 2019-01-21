@@ -26,52 +26,6 @@ async function formatFoodJointData(foodJoints) {
             .catch(error => {
                 console.log(error);
             });
-
-        // Not Allowed based on Google ToS
-
-        // if (foodJoint["place_id"]) {
-        //     // Get Place Details
-        //     const url = `https://maps.googleapis.com/maps/api/place/details/json?key=${process.env.GOOGLE_PLACES_API_KEY}&placeid=${foodJoint["place_id"]}`;
-        //     const res = encodeURI(url);
-
-        //     await axios.get(res)
-        //         .then(response => {
-        //             // Save location
-        //             const lat = response.data.result.geometry.location.lat;
-        //             const lng = response.data.result.geometry.location.lng;
-        //             const address = response.data.result.formatted_address;
-
-        //             foodJoints[i]["location"] = {};
-        //             foodJoints[i]["location"]["coordinates"] = [lng, lat];
-        //             foodJoints[i]["location"]["address"] = address;
-        //             foodJoints[i]["location"]["type"] = "Point";
-
-        //             // Save international phone number
-        //             const phone = response.data.result.international_phone_number;
-        //             foodJoints[i]["intl_phone"] = phone;
-
-        //             // Save opening hours
-        //             if (response.data.result.opening_hours) {
-        //                 const hours = response.data.result.opening_hours.weekday_text;
-        //                 foodJoints[i]["hours"] = hours;
-        //             } else {
-        //                 foodJoints[i]["hours"] = '';
-        //             }
-
-        //             // Save photo references
-        //             if (response.data.result.photos) {
-        //                 const photos = response.data.result.photos.map(photo => photo.photo_reference);
-        //                 foodJoints[i]["photos"] = photos;
-        //             } else {
-        //                 foodJoints[i]["photos"] = [];
-        //             }
-
-        //             return foodJoints[i];
-        //         })
-        //         .catch(error => {
-        //             console.log(error);
-        //         });
-        // }
     }
     return foodJoints;
 }
