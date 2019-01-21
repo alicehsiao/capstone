@@ -33,7 +33,7 @@
 ### Get Started
 - npm install
 - to start: npm start
-- to load data: npm run seed
+- to load data: npm run seed (Google API Key needed)
 - to delete data: npm run wipe
 
 ### [Product Plan](https://gist.github.com/alicehsiao/7db6bf7a9d0d4b96cad21b90a53262ef)
