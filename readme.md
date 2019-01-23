@@ -3,32 +3,32 @@
 
 ### API Documentation 
 - **Get list of attractions in Taichung:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/attractions
+   - https://www.offtotaiwan.com/api/v1/attractions
 - **Get information about a specific attraction:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/attractions/:id
+   - https://www.offtotaiwan.com/api/v1/attractions/:id
    
 - **Get list of hiking trails in Taichung:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/hikingtrails
+   - https://www.offtotaiwan.com/api/v1/hikingtrails
 - **Get information about a specific hiking trail:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/hikingtrails/:id
+   - https://www.offtotaiwan.com/api/v1/hikingtrails/:id
    
 - **Get list of food joints  in Taichung:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/foodjoints
+   - https://www.offtotaiwan.com/api/v1/foodjoints
 - **Get information about a specific food joint:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/foodjoints/:id
+   - https://www.offtotaiwan.com/api/v1/foodjoints/:id
    
 - **Get list of bike paths in Taichung:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/bikepaths
+   - https://www.offtotaiwan.com/api/v1/bikepaths
 - **Get information about a specific bike path:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/bikepaths/:id
+   - https://www.offtotaiwan.com/api/v1/bikepaths/:id
    
 - **Get list of events in Taichung in 2019:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/activities
+   - https://www.offtotaiwan.com/api/v1/activities
 - **Get information about a specific event:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/activities/:id
+   - https://www.offtotaiwan.com/api/v1/activities/:id
    
 - **Query the database:**
-   - https://off-to-taiwan.herokuapp.com/api/v1/search?name=QUERY
+   - https://www.offtotaiwan.com/api/v1/search?name=QUERY
 
 ### Get Started
 - npm install
